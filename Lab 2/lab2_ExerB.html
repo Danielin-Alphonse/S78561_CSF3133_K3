@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+
+    <!--
+    List of Identified Errors in Given Code:
+    Error 1 (Line 10): Closing tag </head> used instead of </header>.
+    Error 2 (Line 20): Used <td>Rating</td> instead of header cell <th>Rating</th>.
+    Error 3 (Line 22-26): Extra/unclosed <tr> tag before Row 1 data cells.
+    Error 4 (Line 28): <td colspan="3"> in a 3-column table pushes total columns to 4 (since Week 2 already occupies column 1).
+    Error 5 (Line 32): Missing closing </td> tag after "Semantic HTML".
+    Error 6 (Line 39-40): <label for="name"> does not match <input id="fullname">.
+    Error 7 (Line 42 & 44): Radio buttons have different name attributes (name="good" and name="poor"), allowing multiple selection.
+    Error 8 (Line 46-47): <input id="lab"> does not match <label for="labs">.
+    Error 9 (Line 49): Misspelled closing tag </from> instead of </form>.
+    Error 10 (Line 52): Missing semicolon in HTML entity &copy (should be &copy;).
+    -->
+
+    <!-- Header Section -->
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+
+    <!-- Navigation Section: Added link to #comments -->
+    <nav>
+        <a href="#results">Results</a> |
+        <a href="#form">Feedback Form</a> |
+        <a href="#comments">Student Comments</a>
+    </nav>
+
+    <!-- Section 1: Feedback Summary Table (Corrected and Extended) -->
+    <section id="results">
+        <h2>Feedback Summary</h2>
+        <table>
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tables and Forms</td>
+                <td>4.2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+            <!-- Extended Row: Week 4 using rowspan="2" on Topic cell -->
+            <tr>
+                <td>4</td>
+                <td rowspan="2">Mini Project</td>
+                <td>4.6</td>
+            </tr>
+            <!-- Extended Row: Week 5 (Topic cell omitted due to rowspan from Week 4) -->
+            <tr>
+                <td>5</td>
+                <td>4.7</td>
+            </tr>
+            <!-- Extended Final Row: Average Rating using colspan="2" -->
+            <tr>
+                <td colspan="2"><strong>Average Rating</strong></td>
+                <td><strong>4.4</strong></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Section 2: Feedback Form (Corrected and Extended) -->
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+            
+            <!-- Corrected Name Input with matching label for="fullname" -->
+            <p>
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="name">
+            </p>
+
+            <!-- Extended Form: E-mail Input with matching label -->
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </p>
+
+            <!-- Extended Form: Drop-down list (<select>) for Section/Group (3 options) -->
+            <p>
+                <label for="group">Section / Group:</label>
+                <select id="group" name="group">
+                    <option value="k1">Group K1</option>
+                    <option value="k2">Group K2</option>
+                    <option value="k3">Group K3</option>
+                </select>
+            </p>
+
+            <!-- Corrected & Extended Radio Buttons: All share name="rating" + added "Average" -->
+            <p>
+                <span>Overall rating:</span><br>
+                <input type="radio" id="good" name="rating" value="good">
+                <label for="good">Good</label>
+
+                <input type="radio" id="average" name="rating" value="average">
+                <label for="average">Average</label>
+
+                <input type="radio" id="poor" name="rating" value="poor">
+                <label for="poor">Poor</label>
+            </p>
+
+            <!-- Extended Form: Group of 3 Checkboxes for topics needing more practice -->
+            <p>
+                <span>Topics I want more practice on:</span><br>
+                <input type="checkbox" id="prac_tables" name="practice" value="tables">
+                <label for="prac_tables">HTML Tables (colspan &amp; rowspan)</label><br>
+
+                <input type="checkbox" id="prac_forms" name="practice" value="forms">
+                <label for="prac_forms">HTML Forms &amp; Input Validation</label><br>
+
+                <input type="checkbox" id="prac_semantic" name="practice" value="semantic">
+                <label for="prac_semantic">Semantic HTML5 Layout</label>
+            </p>
+
+            <!-- Corrected Attendance Checkbox with matching label for="lab" -->
+            <p>
+                <input type="checkbox" id="lab" name="lab" value="yes">
+                <label for="lab">I attended all labs</label>
+            </p>
+
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+    </section>
+
+    <!-- Section 3 (Extended): Student Comments Section with two Articles -->
+    <section id="comments">
+        <h2>Student Comments</h2>
+
+        <article>
+            <h3>Aiman Hakim</h3>
+            <p>The lab exercises really helped me understand how rowspan and colspan work in complex tables.</p>
+        </article>
+
+        <article>
+            <h3>Nurul Izzah</h3>
+            <p>Learning how to validate HTML using the W3C Validator made debugging broken tags much easier!</p>
+        </article>
+    </section>
+
+    <!-- Footer Section (Corrected &copy; entity) -->
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+
+</body>
+</html>

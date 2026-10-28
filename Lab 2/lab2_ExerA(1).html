@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+</head>
+<body>
+ <header>
+    <h1>FSKM Tech &amp; Coding Workshop 2026</h1>
+    <p>Innovating the Future Through Code at Universiti Malaysia Terengganu</p>
+ </header>
+ <nav>
+    <a href="#about">About the Event</a> |
+    <a href="#schedule">Schedule</a> |
+    <a href="#registration">Registration</a>
+ </nav>
+
+ <section id="about">
+    <h2>About the Event</h2>
+    <p>Join this one day intensive workshop designed for FSKM students to sharpen their web development and software engineering skills.</p>
+    
+    <article>
+        <h3>Hands-On Activity: Rapid Prototyping Challenge</h3>
+        <p>Participants will collaborate in teams to build and validate a responsive web interface within two hours</p>
+    </article>
+       </section> 
+
+       <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+                </tr>
+            <tr>
+                <td>8:00 AM - 9:30 AM</td>
+                <td>Registration &amp; Morning Briefing</td>
+                <td rowspan="2">Auditorium FSKM</td>
+                <td>Nurul Aina</td>
+                </tr>
+
+            <tr>
+                <td>9:30 AM - 11:00 AM</td>
+                <td>Keynote Speech: Modern Web Standards</td>
+                <td>Dr. Ahmad Faiz</td>
+                </tr>
+
+                <tr>
+                    <td>11:00 AM - 01:00 PM</td>
+                    <td>Workshop Session 1: HTML &amp; Semantic Structure</td>
+                    <td>Computer Lab 1</td>
+                    <td>Dr. Siti Nurhaliza</td>
+                </tr>
+                <tr>
+    <td>01:00 PM - 02:00 PM</td>
+    <td colspan="3">Lunch Break &amp; Prayer Break</td>
+</tr>  
+                    <tr>
+                        <td>02:00 PM - 04:00 PM</td>
+                        <td>Workshop Session 2: Forms &amp; Data Validation</td>
+                        <td>Computer Lab 1</td>
+                        <td>Mr. Hafizul Hakim</td>
+                    </tr>
+                    <tr>
+                        <td>04:00 PM - 05:00 PM</td>
+                        <td>Rapid Prototyping Pitch &amp; Prize Giving</td>
+                        <td>Auditorium FSKM</td>
+                        <td>Organising Committee</td>
+                        </tr>
+                        </table>
+       </section>
+       <section id="registration">
+        <h2>Registration</h2>
+        <form action="register.php" method="post">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            
+                <label for="matric">Matric Number:</label><br>
+                <input type="text" id="matric" name="matric" required>
+            
+            
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+            
+            
+                <strong>Year of Study:</strong><br>
+                <input type="radio" id="year1" name="year" value="1">
+                <label for="year1">Year 1</label><br>
+                <input type="radio" id="year2" name="year" value="2">
+                <label for="year2">Year 2</label><br>
+                <input type="radio" id="year3" name="year" value="3">
+                <label for="year3">Year 3</label><br>
+                <input type="radio" id="year4" name="year" value="4">
+                <label for="year4">Year 4</label>
+            
+            
+                <strong>Sessions to Join:</strong><br>
+                <input type="checkbox" id="session1" name="sessions" value="keynote">
+                <label for="session1">Keynote Speech</label><br>
+                <input type="checkbox" id="session2" name="sessions" value="html_workshop">
+                <label for="session2">HTML & Semantic Structure</label><br>
+                <input type="checkbox" id="session3" name="sessions" value="forms_workshop">
+                <label for="session3">Forms & Data Validation</label>
+                <input type="checkbox" id="session4" name="sessions" value="prototyping">
+                <label for="session4">Rapid Prototyping Pitch</label>
+            
+            
+                <label for="programme">Programme:</label>
+                <select id="programme" name="programme">
+                    <option value="">Select your programme</option>
+                    <option value="mc">Bachelor of Computer Science (Mobile Computing)</option>
+                    <option value="im">Bachelor of Computer Science (Maritime Informatics)</option>
+                    <option value="se">Bachelor of Computer Science (Software Engineering)</option>
+                    <option value="da">Bachelor of Computer Science (Data Analytics)</option>
+                </select>
+            
+        
+                <input type="submit" value="Register Now">
+            
+        </form>
+    </section>
+    <footer>
+        <p>Organise by Comtech, FSKM UMT. Copyright &copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
