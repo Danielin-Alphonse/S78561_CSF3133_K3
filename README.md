@@ -10,3 +10,6 @@
  ### Lab 2
   * [Lab 2 Exercise A](./Lab%202/lab2_ExerA(1).html)
   * [Lab 2 Exercise B](./Lab%202/lab2_ExerB.html)
+
+### Lab 3 
+* [Lab 3 Exercise A](./Lab%203/Lab3_ExerA.html)
