@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Campus Bakery Online Order</title>
+    </head>
+
+
+<div id="header">
+    <h1>CampusBake&reg; <span>Freshly Baked Every Morining</span></h1>
+</div>
+
+<div id="nav">
+    <a href="#content">Order Form</a> |
+    <a href="#sidebar">Price List</a> |
+    <a href="#footer">Contact Us</a>
+</div>
+
+<div id="content">
+    <h2>Place Your Pre-Order</h2>
+    <p>
+        Welcome to our <strong> campus pre-order portal</strong>! All pastries are baked with
+        <em>organic butter</em>. Please visit our <a href="#sidebar">specials menu</a> or check
+        <span>daily discounts below</span>.
+    </p>
+
+    <form action="#" method="post" oninput="
+    total.value = (parseInt(cupcakes.value || 0) * 3) + (parseInt(slices.value || 0) * 5);"
+    >
+    <h3>Customer Details</h3>
+    <label for="custname">Customer Name: </label>
+    <input type="text" id="custname" name="custname" placeholder="Full Name" required autofocus><br><br>
+
+    <label for="phone">Phone Number: </label>
+    <input type="tel" id="phone" name="phone" placeholder="012-3456789" required><br><br>
+
+    <label for="email">E-mail: </label>
+    <input type="email" id="email" name="email" placeholder="student@ocean.umt.edu.my" required><br><br>
+
+    <h3>Pickup & Customization</h3>
+    <label for="pickdate">Pick-up Date: </label>
+    <input type="date" id="pickdate" name="pickdate"><br><br>
+
+    <label for="picktime">Pick-up Time: </label>
+    <input type="time" id="picktime" name="picktime"><br><br>
+
+    <label for="flavour">Cake Flavour: </label>
+    <input id="flavour" name="flavour" list="flavourlist">
+    <datalist id="flavourlist">
+        <option value="Belgian Chocolate">
+            <option value="Vanilla Bean">
+                <option value="Red Velvet">
+                    <option value="Strawberry Delight">
+    </datalist><br><br>
+
+    <label for="icing">Icing Colour: </label>
+    <input type="color" id="icing" name="icing" value="#ffb6c1"><br><br>
+
+    <label for="sweetness">Sweetness Level (1 to 5): </label>
+    <input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1" value="3"><br><br>
+
+    <h3>Order Quantities</h3>
+    <label for="cupcakes">Cupcakes (RM 3.00 each): </label>
+    <input type="number" id="cupcakes" name="cupcakes" min="0" value="0"><br><br>
+
+            <label for="slices">Cake Slices (RM 5.00 each): </label>
+            <input type="number" id="slices" name="slices" min="0" value="0"><br><br>
+
+            <!-- Dynamic Price Calculation -->
+            <p>Total Price: RM <output name="total" for="cupcakes slices">0</output>.00</p>
+
+            <input type="submit" value="Submit Pre-Order">
+        </form>
+    </div>
+
+
+    <div id="sidebar">
+        <h2>Price List &amp; Promotions</h2>
+        <ul>
+            <li>Cupcake: RM 3.00 (&pound;0.50 / &euro;0.60 approx.)</li>
+            <li>Cake Slice: RM 5.00</li>
+            <li>Orders &gt; 10 pieces get a free drink!</li>
+            <li>Walk-in price &lt; Online price during happy hour</li>
+        </ul>
+    </div>
+
+    
+    <div id="footer">
+        <p>&copy; 2026 CampusBake&reg; UMT. All rights reserved.&nbsp;|&nbsp;Fresh Pastries Daily</p>
+    </div>
+</body>
+</html>
