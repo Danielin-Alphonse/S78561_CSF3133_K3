@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visit Terengganu - Tourism Promotion</title>
+
+        <link rel="stylesheet" href="style.css">
+        
+        <style>
+            h1 {
+                text-decoration: overline;
+                color: #08475e;
+                text-align: center;
+                margin-top: 20px;
+            }
+            h2 {
+                text-decoration: underline;
+                color: #117864;
+                margin-bottom: 12px;
+            }
+            .card {
+                background-color: #ffffff;
+                border: 1px solid #d5dbdb;
+                border-radius: 8px;
+                padding: 16px;
+                margin-bottom: 18px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            }
+            .center-text {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+    <h1>Visit Terengganu</h1>
+    <p class="center-text">Discover pristine islands, rich heritage, and authentic coastal flavours.</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#video">Watch Video</a></li>
+      <li><a href="#trip">Trip Registration</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Section 1: Destinations -->
+    <section id="destinations">
+      <h2>Top Destinations & Packages</h2>
+      
+      <!-- Destination Article 1 -->
+      <article class="card">
+        <h3>Redang Island Marine Escape</h3>
+        <p>Crystal clear waters, sea turtle sanctuaries, and world-class coral reef snorkeling.</p>
+        <p class="price">
+          Price: <span class="old-price">RM 450</span> <span class="new-price">RM 320</span>
+        </p>
+      </article>
+
+      <!-- Destination Article 2 -->
+      <article class="card">
+        <h3>Pasar Payang & Cultural Heritage Tour</h3>
+        <p>Immerse yourself in traditional Terengganu batik, authentic songket, and local keropok lekor.</p>
+        <p class="price">
+          Price: <span class="old-price">RM 150</span> <span class="new-price">RM 99</span>
+        </p>
+      </article>
+
+      <!-- Destination Article 3 -->
+      <article class="card">
+        <h3>Kenyir Lake Rainforest Adventure</h3>
+        <p>Explore ancient tropical rainforests, hidden waterfalls, and peaceful boathouse getaways.</p>
+        <p class="price">
+          Price: <span class="old-price">RM 380</span> <span class="new-price">RM 260</span>
+        </p>
+      </article>
+
+      <!-- Seat Availability Meter -->
+      <div class="meter-box">
+        <label for="trip-meter"><strong>Discounted Promo Seats Filled:</strong></label><br>
+        <meter id="trip-meter" min="0" max="40" value="28">28 of 40 seats filled</meter>
+        <span>(28 / 40 seats booked)</span>
+      </div>
+    </section>
+
+    <!-- Section 2: Promotional Video -->
+    <section id="video">
+      <h2>Experience Terengganu</h2>
+      <figure>
+        <video width="640" height="360" controls>
+          <source src="terengganu.mp4" type="video/mp4">
+          Your browser does not support the video tag. Please update your browser to watch this video.
+        </video>
+        <figcaption>Promotional Video: The Beauty and Heritage of Terengganu Darul Iman.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Section 3: Trip Registration Form -->
+    <section id="trip">
+      <h2>Trip Interest Form</h2>
+      <form class="trip-form" action="#" method="post">
+        <div>
+          <label for="fullname">Full Name:</label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        </div>
+
+        <div>
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" placeholder="example@umt.edu.my" required>
+        </div>
+
+        <fieldset>
+          <legend>Traveller Type</legend>
+          <label><input type="radio" name="traveller_type" value="Student" checked> Student</label>
+          <label><input type="radio" name="traveller_type" value="Staff"> Staff</label>
+          <label><input type="radio" name="traveller_type" value="Public"> Public</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Interests</legend>
+          <label><input type="checkbox" name="interest" value="Islands"> Islands</label>
+          <label><input type="checkbox" name="interest" value="Food"> Food</label>
+          <label><input type="checkbox" name="interest" value="Culture"> Culture</label>
+          <label><input type="checkbox" name="interest" value="Nature"> Nature</label>
+        </fieldset>
+
+        <button type="submit">Register Interest</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Visit Terengganu Tourism Office. All rights reserved.</p>
+    <address>
+      Contact us via email: <a href="mailto:tourism@terengganu.gov.my">tourism@terengganu.gov.my</a>
+    </address>
+  </footer>
+
+</body>
+</html>
