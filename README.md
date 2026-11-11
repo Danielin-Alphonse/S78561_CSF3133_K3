@@ -14,3 +14,7 @@
 ### Lab 3 
 * [Lab 3 Exercise A](./Lab%203/Lab3_ExerA.html)
 * [Lab 3 Exercise B](./Lab%203/Lab3_ExerB.html)
+
+### Lab 4
+* [Lab 4 Exercise A](./Lab%204/Lab4_ExerA.html)
+* [Lab 4 Exercise B](./Lab%204/Lab4_ExerB.html)
