@@ -5,7 +5,7 @@
 * [Wonderbuuk Lab 1](./Wonderbuuk/Lab1(1).html)
 * [Wonderbuuk Lab 2](./Wonderbuuk/lab2.html)
 * [Wonderbuuk Lab 3](./Wonderbuuk/lab3.html)
-* [Wonderbuuk Lab 4](./Wonderbuul/lab4.html)
+* [Wonderbuuk Lab 4](./Wonderbuuk/lab4.html)
 ### Lab 1
 * [Lab 1 Exercise A](./Lab%201/lab1_ExerA.html)
 * [Lab 1 Exercise B](./Lab%201/lab1_ExerB.html)
