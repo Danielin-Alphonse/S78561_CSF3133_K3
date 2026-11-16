@@ -1,23 +1,226 @@
 
-# S78561_CSF3133_K3 - Web Programming Labs
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S78561 | CSF3133 Web Programming Portfolio</title>
+    <!-- Clean aesthetic Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #fdf2f8 0%, #f3e8ff 50%, #fce7f3 100%);
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --pink-accent: #f472b6;
+            --pink-soft: #fbcfe8;
+            --lilac-accent: #a855f7;
+            --lilac-soft: #e9d5ff;
+            --text-dark: #4a2c40;
+            --text-muted: #7e5a75;
+        }
 
-### Wonderbuuk
-* [Wonderbuuk Lab 1](./Wonderbuuk/Lab1(1).html)
-* [Wonderbuuk Lab 2](./Wonderbuuk/lab2.html)
-* [Wonderbuuk Lab 3](./Wonderbuuk/lab3.html)
-* [Wonderbuuk Lab 4](./Wonderbuuk/lab4.html)
-### Lab 1
-* [Lab 1 Exercise A](./Lab%201/lab1_ExerA.html)
-* [Lab 1 Exercise B](./Lab%201/lab1_ExerB.html)
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-### Lab 2
-  * [Lab 2 Exercise A](./Lab%202/lab2_ExerA(1).html)
-  * [Lab 2 Exercise B](./Lab%202/lab2_ExerB.html)
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-dark);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
 
-### Lab 3 
-* [Lab 3 Exercise A](./Lab%203/Lab3_ExerA.html)
-* [Lab 3 Exercise B](./Lab%203/Lab3_ExerB.html)
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
-### Lab 4
-* [Lab 4 Exercise A](./Lab%204/Lab4_ExerA.html)
-* [Lab 4 Exercise B](./Lab%204/Lab4_ExerB.html)
+        /* Hero Header Banner */
+        header {
+            text-align: center;
+            background: var(--card-bg);
+            padding: 35px 25px;
+            border-radius: 24px;
+            border: 2px solid var(--pink-soft);
+            box-shadow: 0 10px 25px rgba(216, 180, 254, 0.25);
+            margin-bottom: 35px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--pink-soft), var(--lilac-soft));
+            color: var(--text-dark);
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #6b21a8;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        /* Grid Layout for Lab Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        /* Individual Module Card */
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 24px;
+            border: 2px solid var(--lilac-soft);
+            box-shadow: 0 8px 20px rgba(244, 114, 182, 0.12);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(168, 85, 247, 0.22);
+            border-color: var(--pink-accent);
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            color: #86198f;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1.5px dashed var(--pink-soft);
+        }
+
+        /* Styled Pill Links */
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            background: linear-gradient(90deg, #fdf2f8, #f5f3ff);
+            color: var(--text-dark);
+            padding: 10px 14px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: 1px solid #f3e8ff;
+            transition: all 0.2s ease;
+        }
+
+        ul li a:hover {
+            background: linear-gradient(90deg, var(--pink-accent), var(--lilac-accent));
+            color: #ffffff;
+            padding-left: 18px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 45px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Main Header -->
+        <header>
+            <span class="badge">S78561 • CSF3133 (K3)</span>
+            <h1>Web Programming Lab Archive</h1>
+            <p>A curated collection of HTML5, CSS3 & interactive web design coursework</p>
+        </header>
+
+        <!-- Lab Sections Grid -->
+        <div class="grid">
+
+            <!-- Section 1: Wonderbuuk -->
+            <div class="card">
+                <h2>✨ Wonderbuuk Series</h2>
+                <p class="card-subtitle">Guided Interactive Workbook Labs</p>
+                <ul>
+                    <li><a href="wonderbuuk-lab1.html">Wonderbuuk Lab 1</a></li>
+                    <li><a href="wonderbuuk-lab2.html">Wonderbuuk Lab 2</a></li>
+                    <li><a href="wonderbuuk-lab3.html">Wonderbuuk Lab 3</a></li>
+                    <li><a href="wonderbuuk-lab4.html">Wonderbuuk Lab 4</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 2: Lab 1 -->
+            <div class="card">
+                <h2>🌸 Lab 1: HTML Basics</h2>
+                <p class="card-subtitle">Document Structure, Text & Links</p>
+                <ul>
+                    <li><a href="lab1a.html">Lab 1 Exercise A</a></li>
+                    <li><a href="lab1b.html">Lab 1 Exercise B</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 3: Lab 2 -->
+            <div class="card">
+                <h2>🦋 Lab 2: Tables & Forms</h2>
+                <p class="card-subtitle">Structured Data & Semantic Layout</p>
+                <ul>
+                    <li><a href="lab2a.html">Lab 2 Exercise A</a></li>
+                    <li><a href="lab2.html">Lab 2: Personal Profile Page</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 4: Lab 3 -->
+            <div class="card">
+                <h2>💜 Lab 3: Advanced HTML5</h2>
+                <p class="card-subtitle">Entities, Input Validation & <output></p>
+                <ul>
+                    <li><a href="lab3a.html">Lab 3 Exercise A</a></li>
+                    <li><a href="lab3.html">Lab 3: Contact & Inline Calculator</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 5: Lab 4 -->
+            <div class="card">
+                <h2>🎨 Lab 4: CSS Styling</h2>
+                <p class="card-subtitle">Selectors, Navbars, Media & Link States</p>
+                <ul>
+                    <li><a href="lab4.html">Lab 4: Responsive Styled Webpage</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>By • Danielin Alphonse (S78561)</p>
+        </footer>
+    </div>
+
+</body>
+</html>
