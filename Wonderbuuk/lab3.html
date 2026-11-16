@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Online Calculator - Lab 3</title>
+</head>
+<body>
+
+    <!-- 1. HEADER SECTION (Block <div> + <h1> with Inline <span>) -->
+    <div id="header">
+        <h1>Customer Support Portal</h1>
+        <span>Fast responses & instant calculation tools</span>
+    </div>
+
+    <hr>
+
+    <!-- 2. CONTENT SECTION -->
+    <div id="content">
+
+        <!-- Sub-div A: HTML5 Contact Form -->
+        <div id="contact-form-section">
+            <h2>Contact Us</h2>
+            <form action="#" method="post" oninput="ratingOut.value=satisfaction.value">
+                
+                <!-- Email Input -->
+                <label for="userEmail">Email Address:</label><br>
+                <input type="email" id="userEmail" name="userEmail" placeholder="you@example.com" required><br><br>
+
+                <!-- Date Input -->
+                <label for="contactDate">Preferred Contact Date:</label><br>
+                <input type="date" id="contactDate" name="contactDate" required><br><br>
+
+                <!-- Range Slider for Satisfaction Level -->
+                <label for="satisfaction">Satisfaction Level (1 to 10):</label><br>
+                <span>1</span>
+                <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" step="1" value="8">
+                <span>10</span>
+                 |  <strong>Selected: <output name="ratingOut" for="satisfaction">8</output>/10</strong><br><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Send Inquiry">
+
+            </form>
+        </div>
+
+        <hr>
+
+        <!-- Sub-div B: Third <div> for Inline Calculator using <output> -->
+        <div id="calculator-section">
+            <h2>Quick Online Calculator</h2>
+            <p>Enter two numbers below to calculate their sum dynamically:</p>
+
+            <form oninput="total.value = (parseFloat(num1.value) || 0) + (parseFloat(num2.value) || 0)">
+                <label for="num1">First Number:</label>
+                <input type="number" id="num1" name="num1" value="0">
+
+                <span> + </span>
+
+                <label for="num2">Second Number:</label>
+                <input type="number" id="num2" name="num2" value="0">
+
+                <span> = </span>
+
+                <strong><output name="total" for="num1 num2">0</output></strong>
+            </form>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- 3. FOOTER SECTION (Final <div> + HTML Entities) -->
+    <div id="footer">
+        <p>Contact Email: support@example.com • Tel: +60 12-345 6789</p>
+        <p>© 2026 Web Development Lab 3. Built with <HTML5>.</p>
+    </div>
+
+</body>
+</html>
