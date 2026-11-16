@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile - Lab 2</title>
+</head>
+<body>
+
+    <!-- 1. Semantic Header -->
+    <header>
+        <h1>My Personal Profile</h1>
+        <p>Welcome to my Web Development Lab 2 page.</p>
+    </header>
+
+    <!-- 2. Semantic Navigation -->
+    <nav>
+        <a href="#about">About Me</a> |
+        <a href="#details">Personal Details</a> |
+        <a href="#contact">Contact Form</a>
+    </nav>
+
+    <hr>
+
+    <!-- 3. Semantic Section & Article for Profile Info -->
+    <section id="about">
+        <article>
+            <h2>About Me</h2>
+            <p>Hello! I am a Software Engineering undergraduate passionate about web design, programming, and building clean, accessible user interfaces.</p>
+        </article>
+
+        <!-- Table Requirement: At least 3 rows and 3 columns with headers -->
+        <article id="details">
+            <h2>Personal Information</h2>
+            <table border="1" cellpadding="8">
+                <tr>
+                    <th>Attribute</th>
+                    <th>Details</th>
+                    <th>Category</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Danielin Alphonse</td>
+                    <td>Identity</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>20</td>
+                    <td>Identity</td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td>University of Malaysia Terengganu Student</td>
+                    <td>Career</td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>Selangor, Malaysia</td>
+                    <td>Demographics</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- 4. Semantic Section for User Input Form -->
+    <section id="contact">
+        <h2>Connect With Me</h2>
+        <form action="#" method="post">
+            
+            <!-- Text Input -->
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+
+            <!-- Email Input -->
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+            <!-- Radio Buttons (Single Choice) -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <!-- Checkboxes (Multiple Choice) -->
+            <label>Favorite Hobbies:</label><br>
+            <input type="checkbox" id="baking" name="hobby1" value="Baking">
+            <label for="baking">Baking</label><br>
+            <input type="checkbox" id="reading" name="hobby2" value="Reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="gaming" name="hobby3" value="Gaming">
+            <label for="gaming">Gaming</label><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Profile">
+
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- 5. Semantic Footer -->
+    <footer>
+        <p>© 2026 My Personal Profile Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
