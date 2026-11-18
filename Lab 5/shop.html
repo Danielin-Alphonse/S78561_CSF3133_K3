@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Bookstore</title>
+  <!-- Fixed Error 1 & Extended (Part 2.8): Added Roboto and Merriweather via Google Fonts CSS2 API -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Fixed Error 2: Changed rel="stylesheets" to rel="stylesheet" -->
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+  <!--
+    LIST OF IDENTIFIED ERRORS (Part 1):
+    Error 1 (shop.html, Line 6): Invalid Google Fonts URL used 'css?family=' with v2 syntax; fixed to 'css2?family=' and added Merriweather.
+    Error 2 (shop.html, Line 7): Typo in rel="stylesheets"; fixed to rel="stylesheet".
+    Error 3 (shop.html, Line 10): <style> element was placed inside <body> instead of <head>; moved styling to shop.css.
+    Error 4 (shop.html, Line 18): Inline style used '=' instead of ':' (color=#1B4F72); fixed to color: #1B4F72 (later updated to white in header).
+    Error 5 (shop.html, Line 20): Table id="product" did not match CSS selector #products; fixed to id="products".
+    Error 6 (shop.css, Line 2): Font family 'Robotto' misspelled; fixed to 'Roboto'.
+    Error 7 (shop.css, Line 4): Missing hyphen in 'no repeat'; fixed to 'no-repeat'.
+    Error 8 (shop.css, Line 5): Property 'bacground-position' misspelled; fixed to 'background-position'.
+    Error 9 (shop.css, Line 18): 'display: inline' on 'li a' ignored vertical padding; fixed to 'display: block'.
+    Error 10 (shop.css, Line 23): Invalid selector 'li:a:hover'; fixed to 'li a:hover'.
+    Error 11 (shop.css, Line 27): Invalid value 'border-collapse: collapsed'; fixed to 'border-collapse: collapse'.
+    Error 12 (shop.css, Line 34): 'tr:nth-child(2)' only styled row 2; fixed to 'tr:nth-child(even)'.
+    Error 13 (shop.css, Line 37): Invalid pseudo-class ':hovered'; fixed to ':hover'.
+    Error 14 (shop.css, Line 45): Missing semicolon after 'background-color: #f1f1f1'; added semicolon.
+  -->
+
+  <!-- Part 2.5: Header with cover background image -->
+  <header>
+    <h1>Campus Bookstore</h1>
+  </header>
+
+  <!-- Part 2.5 & 2.6: Navigation Bar with .active class -->
+  <nav>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Part 2.5: Main Content -->
+  <main>
+    <p>Textbooks, stationery and more for every student.</p>
+
+    <table id="products">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Category</th>
+          <th class="price">Price (RM)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web Design Basics</td>
+          <td>Textbook</td>
+          <td class="price">45.00</td>
+        </tr>
+        <tr>
+          <td>A4 Notebook</td>
+          <td>Stationery</td>
+          <td class="price">6.50</td>
+        </tr>
+        <tr>
+          <td>USB Drive 32GB</td>
+          <td>Gadget</td>
+          <td class="price">25.00</td>
+        </tr>
+        <tr>
+          <td>Highlighter Set</td>
+          <td>Stationery</td>
+          <td class="price">9.90</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <!-- Part 2.5 & 2.9: Footer -->
+  <footer id="contact">
+    © 2026 Campus Bookstore
+  </footer>
+
+</body>
+</html>
