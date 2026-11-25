@@ -1,0 +1,143 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f1;
+    color: #1f2937;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling - Deep Emerald */
+header {
+    background-color: #1b4332;
+    color: #ffffff;
+    padding: 25px 40px;
+    border-bottom: 5px solid #d97706;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+}
+
+header p {
+    margin: 0;
+    color: #d8f3dc;
+}
+
+/* Main Container & Cards */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Input & Buttons */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #9ca3af;
+    border-radius: 5px;
+    width: 220px;
+    margin: 0 10px;
+}
+
+button {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-right: 8px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #d97706;
+}
+
+.reset-btn {
+    background-color: #6b7280;
+}
+
+.reset-btn:hover {
+    background-color: #dc2626;
+}
+
+/* Arena & Choice Images */
+.arena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.fighter img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border: 2px dashed #95d5b2;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #f8faf9;
+}
+
+.vs {
+    font-size: 24px;
+    font-weight: bold;
+    color: #9ca3af;
+}
+
+/* Scoreboard & Results */
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.scoreboard span {
+    margin-right: 25px;
+    font-size: 16px;
+}
+
+/* History Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th, td {
+    border: 1px solid #d1d5db;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1b4332;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f7f4;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #4b5563;
+    font-size: 14px;
+}

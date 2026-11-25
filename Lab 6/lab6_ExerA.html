@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header section with title and instructions -->
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+        <p>Enter your name, click Start Game, then choose Rock, Paper or Scissors.</p>
+    </header>
+
+    <main>
+        <!-- Player setup section -->
+        <section class="card">
+            <label for="playerName">Your name:</label>
+            <input type="text" id="playerName" placeholder="Enter your name">
+            <button onclick="startGame()">Start Game</button>
+            <p id="welcomeMsg"></p>
+        </section>
+
+        <!-- Game controls and visual display section -->
+        <section class="card">
+            <div class="choices">
+                <button onclick="playRound('rock')">Rock</button>
+                <button onclick="playRound('paper')">Paper</button>
+                <button onclick="playRound('scissors')">Scissors</button>
+            </div>
+
+            <div class="arena">
+                <div class="fighter">
+                    <h3>You</h3>
+                    <img id="playerImg" src="" alt="Your Choice">
+                </div>
+                <div class="vs">VS</div>
+                <div class="fighter">
+                    <h3>Computer</h3>
+                    <img id="computerImg" src="" alt="Computer Choice">
+                </div>
+            </div>
+        </section>
+
+        <!-- Result and Scoreboard section -->
+        <section class="card">
+            <p id="result">Make a move to see the result!</p>
+            <div class="scoreboard">
+                <span>Wins: <strong id="wins">0</strong></span>
+                <span>Losses: <strong id="losses">0</strong></span>
+                <span>Draws: <strong id="draws">0</strong></span>
+            </div>
+        </section>
+
+        <!-- History table and control buttons section -->
+        <section class="card">
+            <h2>History</h2>
+            <table id="history">
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th>You</th>
+                        <th>Computer</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody id="historyBody">
+                    <!-- Rows will be inserted dynamically by JavaScript -->
+                </tbody>
+            </table>
+
+            <div class="controls">
+                <button onclick="showSummary()">Show Summary</button>
+                <button class="reset-btn" onclick="resetGame()">Reset</button>
+            </div>
+            <p id="summaryText"></p>
+        </section>
+    </main>
+
+    <!-- Footer section with start timestamp and copyright -->
+    <footer>
+        <p id="startTime"></p>
+        <p>© 2026 Computer Science Club</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="game.js"></script>
+</body>
+</html>
